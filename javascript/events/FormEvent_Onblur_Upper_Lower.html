@@ -1,0 +1,36 @@
+<!DOCTYPE HTML">
+<html>
+
+<head>
+  <script>
+    // Event handler of the first onBlur event    
+    function upperCase() {
+      let x = document.getElementById("s1").value;
+      document.getElementById("s1").value = x.toUpperCase();
+    }
+
+    // Event handler of the second onBlur event    
+    function lowerCase() {
+      let y = document.getElementById("s2").value;
+      document.getElementById("s2").value = y.toLowerCase();
+    }
+  </script>
+</head>
+
+<body>
+  <h3> ON BLUR EVENT EXAMPLE</h3>
+  Enter Any String in LOWER CASE:
+  <!-- onblur event is generated when the input form field loses the focus -->
+  <input type="text" id="s1" onblur="upperCase()">
+
+
+  <br />
+  <br />
+
+  Enter Any String in UPPER CASE:
+  <!-- onblur event is generated when the input form field loses the focus -->
+  <input type="text" id="s2" onblur="lowerCase()">
+
+</body>
+
+</html>

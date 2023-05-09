@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="onStart()">
+    <div class="login-form-container">
+        <h2>Login</h2>
+        <form class="login-form" action="submit_login.php" method="post">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="uppercase">TO UPPERCASE:</label>
+                <input type="text" id="uppercase" name="uppercase" onkeyup="toUppercase(this)" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="checkbox" id="show-password" name="show-password" onchange="showpwd()">
+                <label for="show-password">Show Password</label>
+            </div>
+
+            <div class="input-group">
+                <input type="checkbox" id="agree" name="agree" required onchange="onAgreeChecked()" />
+                <label for="agree">I agree to the terms and conditions</label> <br>
+            </div>
+
+            <div class="input-group">
+                <label for="latitude">Latitude:</label>
+                <input type="text" id="latitude" name="latitude" disabled="true">
+            </div>
+            <div class="input-group">
+                <label for="latitude">Longitude:</label>
+                <input type="text" id="longitude" name="longitude" disabled="true">
+            </div>
+
+            <div>
+                <p>See <a href="../maps/index.html" target="_blank">your location on Google Map.</a></p>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
