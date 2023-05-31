@@ -51,10 +51,19 @@ UPDATE Employees SET DeptID = 1 WHERE EmployeeID = 1;
 
 
 -- fetch all
-SELECT * FROM Employees 
-left outer join Depts 
-  -- (DeptID as ID, Name as DeptName) 
-on Employees.DeptID = Depts.DeptID;
+SELECT * FROM Employees AS E left outer join Depts as D on E.DeptID = D.DeptID;
+
+-- ORDERS TABLE
+-- CREATE TABLE Orders 
+-- (
+-- OrderID integer not null auto_increment,
+-- OrderVal integer not null,
+-- EmployeeID integer not null,
+-- primary key (OrderID),
+-- foreign key(EmployeeID) references Employees(EmployeeID)
+-- );
+
+-- SELECT * FROM Orders;
 
 
 

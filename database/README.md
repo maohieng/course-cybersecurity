@@ -51,4 +51,6 @@ There are 2 types of statement in SQL:
     - UPDATE
     - DELETE
 
-
+### QUERIES
+See [3z8rgggqc](https://onecompiler.com/mysql/3z8rgggqc).
+See [3z8rjr2vt](https://onecompiler.com/mysql/3z8rjr2vt)
